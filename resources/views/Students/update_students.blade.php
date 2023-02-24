@@ -32,6 +32,12 @@
             <div class="card-body p-0">
                 <form action="{{$student_detail->id}}" method="POST" enctype="multipart/form-data">
                     @csrf
+<<<<<<< HEAD
+=======
+                    {{-- @php
+                        dd($student_detail)
+                    @endphp --}}
+>>>>>>> 231a09fcac3c2ed0ccd96519b92cc4d2e8e21464
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card card-primary">
@@ -58,7 +64,11 @@
                                     </div>
                                     <div class="form-group mt-1 mb-1">
                                         <label for="inputName" class="form-label mb-1">Phone:</label>
+<<<<<<< HEAD
                                         <input type="number" id="telephone" name="telephone" value="{{$student_detail->telephone}}" class="form-control" placeholder="Nhập số điện thoại">
+=======
+                                        <input type="text" id="telephone" name="telephone" value="{{$student_detail->telephone}}" class="form-control" placeholder="Nhập số điện thoại">
+>>>>>>> 231a09fcac3c2ed0ccd96519b92cc4d2e8e21464
                                     </div>
                                     
                                 </div>

@@ -3,7 +3,25 @@
 @section('content')
 
 <div class="app-content content ">
+<<<<<<< HEAD
     
+=======
+    @if(session()->has('success'))
+        <div class="txt pb-2 pt-2 ps-2 alert alert-success h3">
+        {{ session()->get('success') }}
+        </div>
+    @endif
+    @if(session()->has('error'))
+        <div class="txt pb-2 pt-2 ps-2 alert alert-danger h3">
+        {{ session()->get('error') }}
+        </div>
+    @endif
+    <script>
+        setTimeout(()=> {
+            $('.txt').addClass('d-none')
+        },3000)
+    </script>
+>>>>>>> 231a09fcac3c2ed0ccd96519b92cc4d2e8e21464
     <div class="card">
                     <div class="card-body border-bottom d-flex justify-content-between align-items-center">
                         <h4 class="card-title">Danh sách</h4>
